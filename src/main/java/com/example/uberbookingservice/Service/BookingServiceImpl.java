@@ -69,7 +69,6 @@ public class BookingServiceImpl implements IBookingService{
         return ResponseBookingDto.builder()
                 .bookingId(result.getId())
                 .bookingStatus(result.getBookingStatus().toString())
-                .driver(Optional.of(result.getDriver()))
                 .build();
 
     }
