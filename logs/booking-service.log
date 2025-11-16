@@ -1,0 +1,38 @@
+2025-11-16T12:34:29.723+05:30  INFO 31700 --- [Uber-Booking-Service] [restartedMain] c.e.u.UberBookingServiceApplication      : Starting UberBookingServiceApplication using Java 17.0.17 with PID 31700 (C:\Users\SANSKAR SINGH\Desktop\Uberbackend\Uber-Booking-Service\build\classes\java\main started by SANSKAR SINGH in C:\Users\SANSKAR SINGH\Desktop\Uberbackend\Uber-Booking-Service)
+2025-11-16T12:34:29.726+05:30  INFO 31700 --- [Uber-Booking-Service] [restartedMain] c.e.u.UberBookingServiceApplication      : No active profile set, falling back to 1 default profile: "default"
+2025-11-16T12:34:29.765+05:30  INFO 31700 --- [Uber-Booking-Service] [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2025-11-16T12:34:29.766+05:30  INFO 31700 --- [Uber-Booking-Service] [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2025-11-16T12:34:30.497+05:30  INFO 31700 --- [Uber-Booking-Service] [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2025-11-16T12:34:30.559+05:30  INFO 31700 --- [Uber-Booking-Service] [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 49 ms. Found 2 JPA repository interfaces.
+2025-11-16T12:34:31.362+05:30  INFO 31700 --- [Uber-Booking-Service] [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port 4000 (http)
+2025-11-16T12:34:31.376+05:30  INFO 31700 --- [Uber-Booking-Service] [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2025-11-16T12:34:31.376+05:30  INFO 31700 --- [Uber-Booking-Service] [restartedMain] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.48]
+2025-11-16T12:34:31.429+05:30  INFO 31700 --- [Uber-Booking-Service] [restartedMain] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2025-11-16T12:34:31.430+05:30  INFO 31700 --- [Uber-Booking-Service] [restartedMain] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 1662 ms
+2025-11-16T12:34:31.647+05:30  INFO 31700 --- [Uber-Booking-Service] [restartedMain] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2025-11-16T12:34:31.739+05:30  INFO 31700 --- [Uber-Booking-Service] [restartedMain] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 6.6.33.Final
+2025-11-16T12:34:31.782+05:30  INFO 31700 --- [Uber-Booking-Service] [restartedMain] o.h.c.internal.RegionFactoryInitiator    : HHH000026: Second-level cache disabled
+2025-11-16T12:34:32.165+05:30  INFO 31700 --- [Uber-Booking-Service] [restartedMain] o.s.o.j.p.SpringPersistenceUnitInfo      : No LoadTimeWeaver setup: ignoring JPA class transformer
+2025-11-16T12:34:32.242+05:30  INFO 31700 --- [Uber-Booking-Service] [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2025-11-16T12:34:32.705+05:30  INFO 31700 --- [Uber-Booking-Service] [restartedMain] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Added connection com.mysql.cj.jdbc.ConnectionImpl@6ee96664
+2025-11-16T12:34:32.707+05:30  INFO 31700 --- [Uber-Booking-Service] [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2025-11-16T12:34:32.833+05:30  INFO 31700 --- [Uber-Booking-Service] [restartedMain] org.hibernate.orm.connections.pooling    : HHH10001005: Database info:
+	Database JDBC URL [Connecting through datasource 'HikariDataSource (HikariPool-1)']
+	Database driver: undefined/unknown
+	Database version: 8.0.39
+	Autocommit mode: undefined/unknown
+	Isolation level: undefined/unknown
+	Minimum pool size: undefined/unknown
+	Maximum pool size: undefined/unknown
+2025-11-16T12:34:34.048+05:30  INFO 31700 --- [Uber-Booking-Service] [restartedMain] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2025-11-16T12:34:34.127+05:30  INFO 31700 --- [Uber-Booking-Service] [restartedMain] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2025-11-16T12:34:34.294+05:30  INFO 31700 --- [Uber-Booking-Service] [restartedMain] c.e.u.Controller.BookingController       : hello  error occured again
+2025-11-16T12:34:34.340+05:30  WARN 31700 --- [Uber-Booking-Service] [restartedMain] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2025-11-16T12:34:34.609+05:30  INFO 31700 --- [Uber-Booking-Service] [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
+2025-11-16T12:34:34.647+05:30  INFO 31700 --- [Uber-Booking-Service] [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port 4000 (http) with context path '/'
+2025-11-16T12:34:34.656+05:30  INFO 31700 --- [Uber-Booking-Service] [restartedMain] c.e.u.UberBookingServiceApplication      : Started UberBookingServiceApplication in 5.411 seconds (process running for 6.15)
+2025-11-16T12:38:11.221+05:30  INFO 31700 --- [Uber-Booking-Service] [SpringApplicationShutdownHook] o.s.b.w.e.tomcat.GracefulShutdown        : Commencing graceful shutdown. Waiting for active requests to complete
+2025-11-16T12:38:11.265+05:30  INFO 31700 --- [Uber-Booking-Service] [tomcat-shutdown] o.s.b.w.e.tomcat.GracefulShutdown        : Graceful shutdown complete
+2025-11-16T12:38:11.273+05:30  INFO 31700 --- [Uber-Booking-Service] [SpringApplicationShutdownHook] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2025-11-16T12:38:11.282+05:30  INFO 31700 --- [Uber-Booking-Service] [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2025-11-16T12:38:11.294+05:30  INFO 31700 --- [Uber-Booking-Service] [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.

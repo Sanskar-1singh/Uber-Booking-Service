@@ -19,7 +19,6 @@ configurations {
         extendsFrom annotationProcessor
     }
 }
-
 repositories {
     mavenCentral()
     mavenLocal()
@@ -27,6 +26,7 @@ repositories {
 
 dependencies {
     implementation 'org.springframework.boot:spring-boot-starter-data-jpa'
+    implementation 'org.springframework.boot:spring-boot-starter'
     implementation 'org.springframework.boot:spring-boot-starter-web'
     implementation 'org.springframework.boot:spring-boot-starter-websocket'
     compileOnly 'org.projectlombok:lombok'
@@ -36,7 +36,19 @@ dependencies {
     annotationProcessor 'org.projectlombok:lombok'
     testImplementation 'org.springframework.boot:spring-boot-starter-test'
     testRuntimeOnly 'org.junit.platform:junit-platform-launcher'
-    implementation 'com.example:Uber-Entity-Services:0.0.5-SNAPSHOT'
+    implementation 'com.example:Uber-Entity-Services:0.0.6-SNAPSHOT'
+    implementation 'com.squareup.retrofit2:retrofit:2.9.0'
+    implementation 'com.squareup.retrofit2:converter-gson:2.9.0'
+    implementation 'org.springframework.cloud:spring-cloud-starter-netflix-eureka-client'
+}
+ext {
+    set('springCloudVersion', "2025.0.0")
+}
+
+dependencyManagement {
+    imports {
+        mavenBom "org.springframework.cloud:spring-cloud-dependencies:${springCloudVersion}"
+    }
 }
 
 tasks.named('test') {

@@ -1,0 +1,32 @@
+
+spring:
+  application:
+    name: Uber-Booking-Service
+  datasource:
+    url: jdbc:mysql://localhost:3306/uber_db_local
+    username: root
+    password: Sanskar@123
+  jpa:
+    show-sql: true
+    hibernate:
+      ddl-auto: validate
+    properties:
+      hibernate:
+        enable_lazy_load_no_trans: true
+  devtools:
+    restart:
+      enabled: false
+  main:
+    allow-bean-definition-overriding: true
+
+server:
+  port: 5555
+
+eureka:
+  client:
+    registryFetchIntervalSeconds: 5
+    initialInstanceInfoReplicationIntervalSeconds: 5
+    serviceUrl:
+      defaultZone: http://localhost:8761/eureka
+  instance:
+    prefer-ip-address: true
