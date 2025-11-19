@@ -8,7 +8,7 @@ import retrofit2.http.POST;
 
 public interface LocationServiceApis {
 
-    @POST("/api/location/nearby/drivers")
+    @POST("api/location/nearby/drivers")
     Call<DriverLocationDto[]> getNearByDrivers(@Body NearByDriverRequestDto nearByDriverRequestDto);
 
 
