@@ -65,7 +65,7 @@ public class BookingServiceImpl implements IBookingService{
                  .longitude(bookingDetail.getStartLocations().getLongitude())
                  .build();
 
-              processNearBydriverAsync(nearByDriverRequestDto,bookingDetail.getPassengerId());
+              processNearBydriverAsync(nearByDriverRequestDto,bookingDetail.getPassengerId(),result.getId());
 
 //        ResponseEntity<DriverLocationDto> driver=restTemplate.postForEntity(
 //                LOCATION_SERVICE+"/api/location/nearby/drivers"
@@ -103,7 +103,7 @@ public class BookingServiceImpl implements IBookingService{
                     .build();
     }
 
-    private void processNearBydriverAsync(NearByDriverRequestDto nearByDriverRequestDto,Long passengerId) {
+    private void processNearBydriverAsync(NearByDriverRequestDto nearByDriverRequestDto,Long passengerId,Long bookingId) {
 
         System.out.println("From service");
         Call<DriverLocationDto[]>  call= locationServiceApis.getNearByDrivers(nearByDriverRequestDto);
@@ -119,7 +119,7 @@ public class BookingServiceImpl implements IBookingService{
                          System.out.println(driverLocationDto.getDriverId().toString());
                      });
                      raiseRideRequestAsync(RideRequestDto.builder()
-                             .passengerId(passengerId).build());
+                             .passengerId(passengerId).bookingId(bookingId).build());
                  }
                  else{
                      System.out.println(response.message());
@@ -133,8 +133,8 @@ public class BookingServiceImpl implements IBookingService{
         });
     }
 
-    private void raiseRideRequestAsync(RideRequestDto rideRequestDto){
-        Call<Boolean> call= uberSocketApi.getNearByDriver(rideRequestDto);
+    private void raiseRideRequestAsync(RideRequestDto rideRequestDto) {
+        Call<Boolean> call= uberSocketApi.raiseRideRequest(rideRequestDto);
         System.out.println("bye bye");
 
         call.enqueue(new Callback<Boolean>() {
