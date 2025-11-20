@@ -11,7 +11,7 @@ Socket Server (send ride requests to drivers)
 Entity Service (shared DB models like Passenger, Driver, Booking)
 
 Built using Spring Boot, Retrofit (async HTTP), Eureka Service Discovery, JPA, and Lombok.
-
+.
 📁 Project Structure
 src/main/java/com/example/uberbookingservice
 │
